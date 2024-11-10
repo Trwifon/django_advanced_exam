@@ -6,5 +6,5 @@ from FisherPoint import common
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('FisherPoint.common.urls')),
-    # path('account/', account.urls),
+    path('account/', include('FisherPoint.account.urls') ),
 ]

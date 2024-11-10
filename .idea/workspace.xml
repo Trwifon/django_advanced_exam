@@ -1,32 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="18ba87eb-a087-4dff-a3bf-3a937bd0818c" name="Changes" comment="" />
+    <list default="true" id="18ba87eb-a087-4dff-a3bf-3a937bd0818c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/FisherPoint/account/helpers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FisherPoint/account/mixins.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FisherPoint/account/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/account/profile_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/account/profile_details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/account/profile_update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/FisherPoint.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FisherPoint.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FisherPoint/account/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/FisherPoint/account/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FisherPoint/account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/FisherPoint/account/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FisherPoint/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/FisherPoint/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FisherPoint/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/FisherPoint/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/FisherPoint/account/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/common/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/common/nav_bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/nav_bar.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Trwifon&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Trwifon/django_advanced_exam.git&quot;,
+    &quot;accountId&quot;: &quot;c5fd02ee-d80a-4b27-b4b8-d30b67dc4422&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2oReTrVbi7lmfYLKFPMudeqZKMI" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Django Server.FisherPoint.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "git-widget-placeholder": "master",
+    "django.template.preview.state": "SHOW_EDITOR",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\django_advanced\FisherPoint" />
+      <recent name="D:\django_advanced\FisherPoint\templates\common" />
+      <recent name="D:\django_advanced\FisherPoint\FisherPoint" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="FisherPoint" type="Python.DjangoServer" factoryName="Django server">
       <module name="FisherPoint" />
@@ -35,6 +102,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="FisherPoint.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -69,7 +137,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730836825375</updated>
-      <workItem from="1730836841154" duration="20000" />
+      <workItem from="1730836841154" duration="21696000" />
+      <workItem from="1730926987931" duration="22457000" />
+      <workItem from="1731093597212" duration="45860000" />
     </task>
     <servers />
   </component>

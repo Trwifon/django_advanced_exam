@@ -1,0 +1,19 @@
+{% extends 'common/index.html' %}
+
+{% block content %}
+    <form method="post">
+        <div class="form-group">
+            <h2>Register profile</h2>
+            {% csrf_token %}
+            {% for field in form %}
+                <div class="form-space">
+                    {{ field.label_tag }}
+                    {{ field }}
+                    {{ field.errors }}
+                </div>
+            {% endfor %}
+        </div>
+        <button class="btn btn-primary">Register</button>
+    </form>
+{% endblock %}
+    
