@@ -1,7 +1,7 @@
 from django.urls import path
 
-from FisherPoint.common.views import index
+from FisherPoint.common.views import index, Dashboard
 
 urlpatterns = [
-    path('', index, name='index'),
+    path('', Dashboard.as_view(), name='dashboard'),
 ]

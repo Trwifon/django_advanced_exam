@@ -1,23 +1,26 @@
 {% load static %}
+{% load user_info %}
 
 <ul class="nav justify-content-center" style="background-color: #bbeae3; font-size: 25px;">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="{% url 'index' %}">
-    <img src="{% static 'fish.png' %}" alt="fish logo" width="40" height="40"/>
+    <a class="nav-link active" aria-current="page" href="{% url 'dashboard' %}">
+    <img src=" {% static 'fish.png' %}" alt="fish logo" width="40" height="40"/>
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Rooms</a>
+    <a class="nav-link" href="{% url 'create_room' %}">Create room</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="#">Competition</a>
   </li>
 
     {% if user.is_authenticated %}
-      <li class="nav-item">
-        <a class="nav-link" href="{% url 'profile_details' request.user.pk %}">Profile</a>
+      <li class="col-md-3 p-2 d-flex justify-content-end">
+        <a href="{% url 'profile_details' user.pk %}" class="roomListRoom__author">
+            <span>{% user_info request.user %}</span>
+        </a>
       </li>
-      <li class="nav-item">
+      <li class="room__topRight">
         <a class="nav-link" href="{% url 'logout' %}" onclick="event.preventDefault(); document.getElementById('form_logout').submit()">
         Logout</a>
       </li>
@@ -26,20 +29,7 @@
         <a class="nav-link" href="{% url 'login' %}">Login</a>
        </li>
     {% endif %}
-
 </ul>
-
-{#    <div id="el">#}
-{#        <a href="{% url 'index' %}">#}
-{#            <img src="{% static 'fish.png' %}" alt="fish logo" />#}
-{#        </a>#}
-{#    </div>#}
-{##}
-{#    <div id="el" >#}
-{#        <a href="{% url 'index' %}">#}
-{#            <h1>Fisher Point</h1>#}
-{#        </a>#}
-{#    </div>#}
 
 <form id='form_logout' method="post" action="{% url 'logout' %}" style="display: none;">
     {% csrf_token %}

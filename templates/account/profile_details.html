@@ -28,15 +28,17 @@
                 </article>
                 
                 <footer>
-                    <article class="buttons">
-                        <a href="{% url 'profile_update' request.user.pk %}">
-                            <button class="btn btn-primary btn-spacing">Edit</button>
-                        </a>
-                        <a href="{% url 'profile_delete' request.user.pk %}">
-                            <button class="btn btn-primary">Delete</button>
-                        </a>
-                    </article>
+                    {% if request.user == profile %}
+                        <article class="buttons">
+                            <a href="{% url 'profile_update' request.user.pk %}">
+                                <button class="btn btn-primary btn-spacing">Edit</button>
+                            </a>
+                            <a href="{% url 'profile_delete' request.user.pk %}">
+                                <button class="btn btn-primary">Delete</button>
+                            </a>
+                        </article>
+                    {% endif %}
                 </footer>
-        </section>
+        </section>    
     </section>
 {% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'common/index.html' %}
+{% load static %}
+
+{% block content %}
+            <form method="post">
+                <div class="form-group">
+                     <h2>Delete room?</h2>
+                    {% csrf_token %}
+                    {% for field in form %}
+                        <div class="form-space">
+                            {{ field.label_tag }}
+                            {{ field }}
+                        </div>
+                    {% endfor %}
+                    <button class="btn btn-primary">Delete</button>
+                </div>
+            </form>
+{% endblock %}

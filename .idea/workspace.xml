@@ -5,23 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18ba87eb-a087-4dff-a3bf-3a937bd0818c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/FisherPoint/account/helpers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FisherPoint/account/mixins.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FisherPoint/account/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/account/profile_delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/account/profile_details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/account/profile_update.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/FisherPoint.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FisherPoint.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FisherPoint/TODO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FisherPoint/account/templatetags/user_info.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FisherPoint/message/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FisherPoint/message/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FisherPoint/room/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FisherPoint/room/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/styles/rooms.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/common/dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/common/user_info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/message/message_create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/message/message_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/message/message_update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/room/room_create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/room/room_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/room/room_details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/room/room_update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1a3a3682-bf4b-4bd8-b501-140e582e9b12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1a3a3682-bf4b-4bd8-b501-140e582e9b12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1a3a3682-bf4b-4bd8-b501-140e582e9b12/storage_v2/_src_/database/fisher_point.1u03Tg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1a3a3682-bf4b-4bd8-b501-140e582e9b12/storage_v2/_src_/database/fisher_point.1u03Tg/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FisherPoint/account/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/FisherPoint/account/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FisherPoint/account/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/FisherPoint/account/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FisherPoint/account/mixins.py" beforeDir="false" afterPath="$PROJECT_DIR$/FisherPoint/common/mixins.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FisherPoint/account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/FisherPoint/account/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FisherPoint/common/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/FisherPoint/common/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FisherPoint/common/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/FisherPoint/common/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FisherPoint/common/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/FisherPoint/common/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FisherPoint/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/FisherPoint/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FisherPoint/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/FisherPoint/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/FisherPoint/account/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediafiles/1730987011040.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediafiles/avatar1.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/avatar1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediafiles/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mediafiles/fish.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/fish.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/common/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/account/profile_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/profile_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/account/profile_update.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/account/profile_update.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/common/nav_bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/nav_bar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +52,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="Python Script" />
         <option value="HTML File" />
       </list>
@@ -66,32 +84,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Django Server.FisherPoint.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "django.template.preview.state": "SHOW_EDITOR",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Django Server.FisherPoint.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/django_advanced/FisherPoint/static/images&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\django_advanced\FisherPoint\static\images" />
+      <recent name="D:\django_advanced\FisherPoint\templates\message" />
+      <recent name="D:\django_advanced\FisherPoint\FisherPoint\message" />
+      <recent name="D:\django_advanced\FisherPoint\FisherPoint\room" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\django_advanced\FisherPoint\FisherPoint\common" />
+      <recent name="D:\django_advanced\FisherPoint\FisherPoint" />
       <recent name="D:\django_advanced\FisherPoint" />
       <recent name="D:\django_advanced\FisherPoint\templates\common" />
-      <recent name="D:\django_advanced\FisherPoint\FisherPoint" />
     </key>
   </component>
   <component name="RunManager">
@@ -139,7 +167,9 @@
       <updated>1730836825375</updated>
       <workItem from="1730836841154" duration="21696000" />
       <workItem from="1730926987931" duration="22457000" />
-      <workItem from="1731093597212" duration="45860000" />
+      <workItem from="1731093597212" duration="55223000" />
+      <workItem from="1731246461387" duration="49879000" />
+      <workItem from="1731473766302" duration="30372000" />
     </task>
     <servers />
   </component>

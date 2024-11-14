@@ -25,8 +25,11 @@ ALLOWED_HOSTS = []
 # Application definition
 
 MY_APPS = [
-   'FisherPoint.account',
-   'FisherPoint.common',
+    'FisherPoint.account',
+    'FisherPoint.common',
+    'FisherPoint.room',
+    'FisherPoint.message',
+
 ]
 
 INSTALLED_APPS = [
@@ -122,10 +125,11 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static/styles/',
     BASE_DIR / 'static/js/',
+    BASE_DIR / 'static/images/',
 ]
 
-MEDIA_URL = 'media/'
-MEDIA_ROOT = BASE_DIR / 'mediafiles/'
+# MEDIA_URL = 'media/'
+# MEDIA_ROOT = BASE_DIR / 'mediafiles/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
@@ -133,5 +137,5 @@ MEDIA_ROOT = BASE_DIR / 'mediafiles/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'account.User'
-LOGIN_REDIRECT_URL = reverse_lazy('index')
-LOGOUT_REDIRECT_URL = reverse_lazy('index')
+LOGIN_REDIRECT_URL = reverse_lazy('dashboard')
+LOGOUT_REDIRECT_URL = reverse_lazy('dashboard')
