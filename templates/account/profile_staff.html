@@ -1,0 +1,43 @@
+    <section class="details">
+        <section class="detail">
+            <header>
+                <div class="text-center pt-3">
+                    <img src="{{ profile.avatar.url }}" alt="image" width="125" height="90">
+                      <h3>{{ profile.username }}</h3>
+                      <h4 class="text-center pt-5">Staff details</h4>
+                </div>
+
+                
+              </header>  
+            
+                <article class="user-infos">
+                    <span class="info">
+                        First name: {{ profile.first_name }}
+                    </span>
+                    <span class="info">
+                        Last name: {{ profile.last_name }}
+                    </span>
+                    <span class="info">
+                        Email: {{ profile.email }}
+                    </span>
+                    <span class="info">
+                        About staff: {{ profile.description }}
+                    </span>
+                </article>
+                
+                <footer>
+                    <article class="buttons">
+                        {% if request.user == profile %}
+                            <a href="{% url 'profile_update' request.user.pk %}">
+                                <button class="btn btn-primary btn-spacing">Edit</button>
+                            </a>
+                        {% endif %}    
+                        {% if request.user == profile or request.user.is_staff %}
+                            <a href="{% url 'profile_delete' request.user.pk %}">
+                                <button class="btn btn-primary">Delete</button>
+                            </a>
+                        {% endif %}
+                    </article>
+                </footer>
+        </section>    
+    </section>

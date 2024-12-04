@@ -1,0 +1,31 @@
+{% extends 'common/index.html' %}
+{% load static %}
+
+{% block content %}
+    <form method="post">
+        <div class="form-group">
+            <h4>Login</h4>
+            <hr>
+            {% csrf_token %}
+            {% for field in form %}
+                <div class="form-space">
+                    {{ field.label_tag }}
+                    {{ field }}
+                    {{ field.errors }}
+                </div>
+            {% endfor %}
+        
+            {% for error in form.non_field_errors %}
+                {{ error }}
+            {% endfor %}
+            <br>
+            <button class="btn btn-primary ml-3 mt-3">Login</button>
+            <h5 class="mt-5">You don't have a registration?
+                <a href="{% url 'register' %}">Register</a>
+            </h5>
+        </div>
+    </form>
+{% endblock %}
+
+
+

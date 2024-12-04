@@ -1,0 +1,72 @@
+{% extends 'common/index.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="details">
+        <section class="detail">
+            <header>
+                <span>
+                    <img src="{{ competition.photo.url }}" alt="Photo" width="100" height="80">
+                </span>
+                <h2 class="text-center">{{ competition.title }}</h2>
+                {% if current_date > competition.date_of_event %}
+                    <h5 class="text-center"> First place: {{ competition.first_place }}</h5>
+                    <h5 class="text-center"> Second place: {{ competition.second_place }}</h5>
+                    <h5 class="text-center"> Third place: {{ competition.third_place }}</h5>
+                {% else %}
+                    {% if request.user.is_authenticated %}
+                        {% if is_fishermen %}
+                            {% if request.user not in competition.participants.all %}
+                                <form method="post">
+                                    {% csrf_token %}
+                                    {{ form }}
+                                    <div class="d-flex justify-content-center mt-lg-5">
+                                        <button class="btn btn-primary" type="submit">Join the competition</button>
+                                    </div>
+                                </form>
+                            {% else %}
+                                <h4 class="text-center mt-lg-5">You are already a participant</h4>
+                            {% endif %}
+                        {% endif %}
+                    {% endif %}
+                {% endif %}
+            </header>
+                <article class="user-infos ">
+                  <h4 class="d-flex justify-content-center">Details competition</h4>
+                    <span class="info">
+                        Description: {{ competition.description }}
+                    </span>
+                     <span class="info">
+                        Location: {{ competition.location }}
+                    </span>
+                     <span class="info">
+                        Date: {{ competition.date_of_event }}
+                    </span>
+                <span class="text-center">Participants:</span>    
+                </article>
+                <ol>
+                     {% for participant in competition.participants.all %}
+                        <li>
+                            <a href="{% url 'profile_details' participant.pk %}">{{ participant.username }}</a>
+                        </li>
+                         {% empty %}
+                         <span>No participants</span>
+                     {% endfor %}
+                </ol>
+                <footer>
+                    <article class="buttons">
+                        {% if request.user == competition.host %}
+                            <a href="{% url 'update_competition' competition.pk %}">
+                                <button class="btn btn-primary btn-spacing">Edit</button>
+                            </a>
+                        {% endif %}
+                        {% if request.user == competition.host or request.user.is_staff %}
+                            <a href="{% url 'delete_competition' competition.pk %}">
+                                <button class="btn btn-primary">Delete</button>
+                            </a>
+                        {% endif %}   
+                    </article>
+                </footer>
+        </section>    
+    </section>
+{% endblock %}

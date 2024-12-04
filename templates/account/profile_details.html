@@ -1,0 +1,12 @@
+{% extends 'common/index.html' %}
+{% load static %}
+
+{% block content %}
+    {% if profile.groups.first.name == 'fishermen' %}
+        {% include 'account/profile_fishermen.html' %}
+    {% elif profile.groups.first.name == 'clubs' %}
+        {% include 'account/profile_clubs.html' %}
+    {% else %}
+        {% include 'account/profile_staff.html' %}
+    {% endif %}
+{% endblock %}

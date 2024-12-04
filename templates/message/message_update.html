@@ -1,0 +1,21 @@
+{% extends 'common/index.html' %}
+{% load static %}
+
+{% block content %}
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <h4>Update message</h4>
+            <hr>
+            {% csrf_token %}
+            {% for field in form %}
+                <div class="form-space">
+                    {{ field }}
+                    <br>
+                    {{ field.help_text }}
+                    {{ field.errors }}
+                </div>
+            {% endfor %}
+            <button class="btn btn-primary">Update</button>
+        </div>
+    </form>
+{% endblock %}

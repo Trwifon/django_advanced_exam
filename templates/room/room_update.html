@@ -1,0 +1,22 @@
+{% extends 'common/index.html' %}
+{% load static %}
+
+{% block content %}
+    <form method="post">
+        <div class="form-group">
+            <h2>Update room?</h2>
+            <hr>
+            {% csrf_token %}
+            {% for field in form %}
+                <div class="form-space">
+                    {{ field.label_tag }}
+                    {{ field }}
+                    <br>
+                    {{ field.help_text }}
+                    {{ field.errors }}
+                </div>
+            {% endfor %}
+            <button class="btn btn-primary">Update</button>
+        </div>
+    </form>
+{% endblock %}
