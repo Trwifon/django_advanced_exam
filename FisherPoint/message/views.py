@@ -56,5 +56,5 @@ class MessageDeleteView(UserPassesTestMixin, DeleteView, FormView):
 
     def test_func(self):
         message = get_object_or_404(Message, pk=self.kwargs['pk'])
-        authorization = self.request.user == message.user or self.request.user.is_staff
+        authorization = self.request.user == message.user or self.request.user.has_perm('message.delete_message')
         return authorization

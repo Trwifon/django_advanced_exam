@@ -20,13 +20,11 @@ class CompetitionCreateView(GroupRequiredMixin, CreateView):
     form_class = CompetitionCreateForm
     template_name = 'competition/competition_create.html'
     success_url = reverse_lazy('dashboard')
+    login_url = reverse_lazy('login')
 
     def form_valid(self, form):
         form.instance.host = self.request.user
         return super().form_valid(form)
-
-    def get_login_url(self):
-        return reverse_lazy('login')
 
 
 class CompetitionDetailView(DetailView, FormView):
@@ -59,13 +57,11 @@ class CompetitionUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView)
     pk_url_kwarg = 'pk'
     template_name = 'competition/competition_update.html'
     success_url = reverse_lazy('dashboard')
+    login_url = reverse_lazy('login')
 
     def test_func(self):
         competition = get_object_or_404(Competition, pk=self.kwargs['pk'])
         return self.request.user == competition.host
-
-    def get_login_url(self):
-        return reverse_lazy('login')
 
 
 class CompetitionDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
@@ -74,6 +70,7 @@ class CompetitionDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView)
     pk_url_kwarg = 'pk'
     template_name = 'competition/competition_delete.html'
     success_url = reverse_lazy('dashboard')
+    login_url = reverse_lazy('login')
 
     def get_initial(self):
         return self.object.__dict__
@@ -83,9 +80,6 @@ class CompetitionDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView)
 
     def test_func(self):
         competition = get_object_or_404(Competition, pk=self.kwargs['pk'])
-        authorization = self.request.user == competition.host or self.request.user.is_staff
+        authorization = self.request.user == competition.host or self.request.user.has_perm('competition.delete_competition')
         return authorization
-
-    def get_login_url(self):
-        return reverse_lazy('login')
 

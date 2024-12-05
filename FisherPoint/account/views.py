@@ -70,7 +70,7 @@ class UserDeleteView(UserPassesTestMixin, DeleteView, FormView):
 
     def test_func(self):
         user = get_object_or_404(User, pk=self.kwargs['pk'])
-        authorization = self.request.user == user or self.request.user.is_staff
+        authorization = self.request.user == user or self.request.user.has_perm('account.delete_account')
         return authorization
 
     def form_valid(self, form):
