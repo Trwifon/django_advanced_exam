@@ -27,12 +27,14 @@
                         About me: {{ profile.description }}
                     </span>
                     <ul class="text-center mt-lg-5">
-                        Competitions:
-                        {% for competition in competitions %}
-                            <li class="text-start">
-                                {{ competition.title }}
-                            </li>
-                        {% endfor %}
+                        {% if competitions %}
+                            Competitions:
+                            {% for competition in competitions %}
+                                <li class="text-start">
+                                    {{ competition.title }}
+                                </li>
+                            {% endfor %}
+                        {% endif %}
                     </ul>
                 </article>
                 
