@@ -7,7 +7,7 @@ from FisherPoint.competition.models import Competition
 class CompetitionBaseForm(forms.ModelForm):
     title = forms.CharField(
         max_length=50,
-        help_text='Must contains only letters, numbers and spaces',
+        help_text='Must contains only letters, numbers, apostrophe and spaces',
         widget=forms.TextInput(attrs={'placeholder': 'Title'})
     )
 
@@ -27,6 +27,11 @@ class CompetitionBaseForm(forms.ModelForm):
     date_of_event = forms.DateField(
         help_text='Date of the competition',
         widget=forms.TextInput(attrs={'placeholder': 'YYYY-MM-DD'})
+    )
+
+    photo = forms.FileField(
+        required=False,
+        help_text='Allowed types are: jpg, jpeg, png, gif, webp, jfif and file size must be below 0.5 MB'
     )
 
     class Meta:

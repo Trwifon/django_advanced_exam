@@ -10,6 +10,11 @@ class MessageBaseForm(forms.ModelForm):
         widget=forms.Textarea(attrs={'placeholder': 'Message'})
     )
 
+    image = forms.FileField(
+        required=False,
+        help_text='Allowed types are: jpg, jpeg, png, gif, webp, jfif and file size must be below 0.5 MB'
+    )
+
     class Meta:
         model = Message
         fields = ['body', 'image']

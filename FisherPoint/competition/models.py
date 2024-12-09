@@ -3,7 +3,7 @@ from django.db import models
 from FisherPoint.account.models import User
 from cloudinary.models import CloudinaryField
 
-from FisherPoint.validators.validators import competition_title_validator
+from FisherPoint.validators.validators import competition_title_validator, ValidateCloudinaryImage
 
 
 class Competition(models.Model):
@@ -25,6 +25,9 @@ class Competition(models.Model):
         'image',
         null=True,
         blank=True,
+        validators=[
+            ValidateCloudinaryImage(0.5)
+        ]
     )
 
     location = models.CharField(

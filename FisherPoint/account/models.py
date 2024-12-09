@@ -2,7 +2,7 @@ from django.contrib.auth.models import AbstractUser
 from django.core.validators import MinLengthValidator
 from django.db import models
 from cloudinary.models import CloudinaryField
-from FisherPoint.validators.validators import username_validator
+from FisherPoint.validators.validators import username_validator, ValidateCloudinaryImage
 
 
 class User(AbstractUser):
@@ -22,6 +22,9 @@ class User(AbstractUser):
         'image',
         null=True,
         blank=True,
+        validators=[
+            ValidateCloudinaryImage(0.5)
+        ]
     )
 
     def __str__(self):

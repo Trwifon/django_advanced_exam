@@ -18,6 +18,11 @@ class ProfileBaseForm(forms.ModelForm):
         help_text='Enter your last name.',
         widget=forms.TextInput(attrs={'placeholder': 'Last Name'}))
 
+    avatar = forms.FileField(
+        required=False,
+        help_text='Allowed types are: jpg, jpeg, png, gif, webp, jfif and file size must be below 0.5 MB'
+    )
+
     class Meta:
         model = UserModel
         fields = ('username', 'first_name', 'last_name', 'description', 'avatar')
@@ -25,8 +30,8 @@ class ProfileBaseForm(forms.ModelForm):
 
 class ProfileCreateForm(UserCreationForm):
     username = forms.CharField(
-        max_length=20,
-        help_text= 'Your username must contain only letters, numbers and underscores.',
+        max_length=30,
+        help_text= 'Your username must contain only letters, numbers, apostrophe and underscores.',
         widget=forms.TextInput(attrs={'placeholder': 'Username'}))
 
     email = forms.EmailField(

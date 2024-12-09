@@ -9,4 +9,5 @@ def user_info(user):
                 'avatar': user.avatar,
                 }
     else:
-        return {'username': 'Anonymous',}
+        return {'username': 'Anonymous'}
+

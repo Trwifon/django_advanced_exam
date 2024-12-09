@@ -1,8 +1,12 @@
+from wsgiref.validate import validator
+
 from django.db import models
 from FisherPoint.account.models import User
 from FisherPoint.competition.models import Competition
 from FisherPoint.room.models import Room
 from cloudinary.models import CloudinaryField
+
+from FisherPoint.validators.validators import ValidateCloudinaryImage
 
 
 class Message(models.Model):
@@ -33,7 +37,11 @@ class Message(models.Model):
     image = CloudinaryField(
         'image',
         null=True,
-        blank=True)
+        blank=True,
+        validators = [
+            ValidateCloudinaryImage(0.5)
+        ]
+    )
 
     likes = models.ManyToManyField(
         to=User,
