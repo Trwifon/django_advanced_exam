@@ -6,7 +6,9 @@ I know this is not the right place for this information but, at this moment, I d
 
 Clone the repository
 Install requirements.txt
-Create database and run migrations
+Create database
+Run migrations
+Create .env file and copy the variables shown below
 Create superuser
 
 To create a user through the application, you need to select a group. For this reason, in advance through the admin panel, the superuser must create:
