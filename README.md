@@ -65,3 +65,12 @@ CLOUD_NAME = dyrqae7cf
 API_KEY = 527941524498955
 API_SECRET = Waqmgvnw__SKT8Uh5pm3JV5wimU
 
+
+If it is useful - credentials of the users (email, password):
+admin@mail.com - admin
+trifon1@mail.com - test1111
+pesho2@mail.com - test2222
+club9@mail.com - test9999
+club8@mail.com - test8888
+moderator@mail.com - 12test34
+
