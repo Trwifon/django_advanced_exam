@@ -6,10 +6,14 @@ I know this is not the right place for this information but, at this moment, I d
 
 Clone the repository
 Install requirements.txt
-Create database
-Run migrations
 Create .env file and copy the variables shown below
+Create postgres database with name - fisherman_point
+Change DB_USER and DB_PASSWORD in .env with your postgres credentials
+Run migrations
+
 Create superuser
+
+Run the project
 
 To create a user through the application, you need to select a group. For this reason, in advance through the admin panel, the superuser must create:
 
@@ -29,7 +33,7 @@ Room | room | Can view room
 Competition | competition | Can delete competition
 Competition | competition | Can view competition
 
-Run the project
+
 
 Through the application, you can now create:
 
