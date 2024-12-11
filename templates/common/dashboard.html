@@ -64,7 +64,7 @@
                          {% if user.is_authenticated %}
                             <a href="{% url 'profile_details' competition.host.pk %}" class="roomListRoom__author">
                          {% else %}   
-                            <a href="#" class="roomListRoom__author">
+                            <a href="{% url 'login' %}" class="roomListRoom__author">
                          {% endif %}   
                                 <div class="avatar avatar--small">
                                     <img src="{{competition.host.avatar.url}}" />
